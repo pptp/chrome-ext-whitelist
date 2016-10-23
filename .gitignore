@@ -1,4 +1,7 @@
 bower_components
+node_modules
 
 *.zip
 *.bak
+
+test

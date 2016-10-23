@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Fishing Blocker",
+  "name": "Fake Checker",
   "version": "1.0",
 
   "permissions": [
@@ -10,6 +10,7 @@
   ],
 
   "browser_action": {
+    "browser_style": true,
     "default_title": "Check Jabber",
     "default_icon": {
       "16": "icons/false/wlist_false_16.png",

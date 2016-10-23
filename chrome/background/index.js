@@ -15,12 +15,14 @@ function createSetIconAction(path, callback) {
 function loadConditions(callback) {
   chrome.storage.sync.get("whitelist", function(list) {
     var conditions = [];
-    list.whitelist.forEach(function(item) {
-      var condition = new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: { urlContains: item.URL }
+    if (list.whitelist) {
+      list.whitelist.forEach(function(item) {
+        var condition = new chrome.declarativeContent.PageStateMatcher({
+          pageUrl: { urlContains: item.URL }
+        });
+        conditions.push(condition);
       });
-      conditions.push(condition);
-    });
+    }
     callback(conditions);
   });
 }

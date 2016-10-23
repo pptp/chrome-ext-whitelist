@@ -1,0 +1,18 @@
+body { padding: 10px; }
+
+.checker {
+  margin: 10px 0 0 0;  
+}
+
+.checker .check-field {
+  border: 2px solid #999;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.checker .check-field.success {
+  border-color: green;
+}
+.checker .check-field.fail {
+  border-color: red;
+}
