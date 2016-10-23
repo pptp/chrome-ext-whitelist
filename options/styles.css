@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "helvetica";
+}
+
+header {
+  font-size: 5em;
+  height: 120px;
+  line-height: 120px;
+  background-color: #2a2d3c;
+  background-image: url(icon.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section {
+  padding-top: 50px;
+}
+
+#whitelist-grid {
+  margin: auto;
+  font-size: 1.2em;
+}
+
+.jsgrid-grid-header .jsgrid-header-row>.jsgrid-header-cell.jsgrid-header-sortable {
+  background-color: #616483;
+  color: #FFFFFF;
+}
+
+.jsgrid-grid-body .jsgrid-alt-row>.jsgrid-cell {
+  background: #eaebf4;
+}
+.jsgrid-grid-body .jsgrid-alt-row>.jsgrid-cell.jsgrid-control-field {
+  background: #fcfcfc;
+}
